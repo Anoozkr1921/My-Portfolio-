@@ -107,6 +107,33 @@
         color: rgb(20, 20, 30);
         box-shadow: 0 0 10px rgb(196, 193, 18);
     }
+    .img .imgbox{
+        width: 32vw;
+        height: 32vw;
+        background-color: rgb(85, 26, 5);
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .img .imgbox .imgitem{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(20, 20, 30);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .img .imgbox .imgitem img{
+        position: absolute;
+        display: block;
+        width: 125%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        bottom: 0.5px;
+        
+    }
 
 </style>
 <body>
@@ -141,6 +168,13 @@
                 </div>
             </div>
         </div>
+         <div class="img">
+                <div class="imgbox">
+                    <div class="imgitem">
+                        <img src="profilepic.jpg" alt="">
+                    </div>
+                </div>
+            </div>
     </section>
     
 </body>
