@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: rgb(20, 20, 30);
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 25px 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .navbar .logo{
+        font-size: 32px;
+        font-weight: 700;
+        color: bisque;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        list-style: none;
+        margin: 30px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+        font-weight: 600px;
+        transition: 0.5s;
+    }
+    .navbar ul li a:hover , a.active{
+        color: rgb(249, 236, 55);
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 60px 9% 0;
+        color: white;
+        border: 4px solid burlywood;
+    }
+    .home-info h1{
+        font-size: 55px;
+    }
+    .home-info h2{
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    .home-info p{
+        font-size: 15px;
+        margin: 10px 0 25px;
+    }
+    .home-info .btns{
+        display: flex;
+        align-items: center;
+    }
+    .btn{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: rgb(196, 193, 18);
+        border: 2px solid green;
+        border-radius: 40px;
+        box-shadow: 0 0 10px;
+        font-size: 18px;
+        color: rgb(20, 20, 30);
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    .btn:hover{
+        background: transparent;
+        color: rgb(196, 193, 18);
+        box-shadow: none;
+    }
+    .home-info .btns .icons{
+        margin-left: 20px;
+    }
+    .home-info .btns .icons a{
+        display: inline-flex;
+        padding: 8px;
+        border: 2px solid greenyellow;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    .home-info .btns .icons a:hover{
+        background-color: rgb(196, 193, 18);
+        color: rgb(20, 20, 30);
+        box-shadow: 0 0 10px rgb(196, 193, 18);
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section class="home">
+        <div class="home-info">
+            <h1>Anooz Kumar Burnwal</h1>
+            <h2>I am a Frontend developer</h2>
+            <p>> I am currently pursuing Btech dgree in Elctronics and Communication Engineering From BIT Mesra.
+                <br>
+                > I am very much interested in developing and create websites.
+                <br>
+                > I practice DSA in c++ and take part in competitive programming too.
+                <br>
+                > I was recommended for NDA-153 course Indian Air Force(Flying) from 3 AFSB Gandhinagar and cleared CPSS too (AIR-492).
+            </p>
+            <div class="btns">
+                <a href="#" class="btn">Download CV</a>
+                <div class="icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i> </a>
+                    <a href="#"><i class='bx bxl-github'></i> </a>
+                    <a href="#"><i class='bx bxl-instagram'></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
